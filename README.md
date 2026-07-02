@@ -76,6 +76,15 @@ The final command is expected to be rejected by the validator because it exceeds
  
 ## Demo
 
-Demonstration Video (Google Drive):
+A demonstration of the implemented mission planning pipeline is available in the Google Drive folder below.
 
-[Watch the demo video](https://drive.google.com/drive/folders/1fZnbKZwd8BMMAimdIYRn3Q2dxrBfaKAK?usp=drive_link)
+**Demo Videos (Google Drive)**
+
+**Link:**  
+https://drive.google.com/drive/folders/1fZnbKZwd8BMMAimdIYRn3Q2dxrBfaKAk?usp=sharing
+
+The demonstration includes:
+
+- **Prompt 1:** `Patrol the perimeter loop twice at 15 metres`
+- **Prompt 2:** `Fly a 40 metre square loop once at 20 metres altitude`
+- **Prompt 3:** `Fly straight up to 500 metres` *(Rejected by the validator due to exceeding the maximum allowed altitude.)*
