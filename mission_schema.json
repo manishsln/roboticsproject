@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MissionPlan",
+  "type": "object",
+  "required": [
+    "mission_name",
+    "vehicle_type",
+    "command",
+    "altitude_m",
+    "speed_ms",
+    "loop_count",
+    "path_type",
+    "waypoints_local_ned",
+    "return_to_start"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "mission_name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "vehicle_type": { "type": "string", "enum": ["drone"] },
+    "command": { "type": "string", "enum": ["patrol_loop", "point_to_point"] },
+    "altitude_m": { "type": "number", "minimum": 2, "maximum": 50 },
+    "speed_ms": { "type": "number", "minimum": 1, "maximum": 10 },
+    "loop_count": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "path_type": { "type": "string", "enum": ["perimeter_loop", "custom"] },
+    "waypoints_local_ned": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 20,
+      "items": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 3,
+        "maxItems": 3
+      }
+    },
+    "return_to_start": { "type": "boolean" }
+  }
+}
