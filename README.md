@@ -75,5 +75,7 @@ The final command is expected to be rejected by the validator because it exceeds
 ---
  
 ## Demo
- 
-A demonstration video showing successful mission execution and validation is included with the submission.
+
+Demonstration Video (Google Drive):
+
+[Watch the demo video](https://drive.google.com/drive/folders/1fZnbKZwd8BMMAimdIYRn3Q2dxrBfaKAK?usp=drive_link)
